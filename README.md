@@ -1,3 +1,3 @@
 about
 =====
-Simple website demonstrates basic AngularJS features
+A simple website demonstrates basic AngularJS features
