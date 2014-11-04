@@ -1,5 +1,5 @@
-<div class="app-content-wrapper shadow-z1" ng-controller="AboutCtrl as ctrl">
-  <div class="">
+<div class="app-content-wrapper clearfix" ng-controller="AboutCtrl as ctrl">
+  <div class="app-col-6">
     <section class="app-card about-basic">
       <h4 class="app-card-header" ng-bind="ctrl.basicInfo.header"></h4>
       <div class="app-card-content">
@@ -7,6 +7,55 @@
           <label class="app-field-label" ng-bind="field.label"></label>
           <div class="app-field-value">
             <p ng-bind="field.value"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-card about-lang">
+      <h4 class="app-card-header" ng-bind="ctrl.langInfo.header"></h4>
+      <div class="app-card-content">
+        <div class="app-field-group clearfix" ng-repeat="field in ctrl.langInfo.fields">
+          <label class="app-field-label" ng-bind="field.label"></label>
+          <div class="app-field-value">
+            <p ng-bind="field.value"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="app-col-6">
+    <section class="app-card about-edu">
+      <h4 class="app-card-header">Education</h4>
+      <div class="app-card-content">
+        <div class="college-wrapper clearfix">
+          <img class="college-logo" width="48px" style="float: left;" src="styles/imgs/dh-gtvt.jpg">
+          <div class="college-desc">
+            <label>Ho Chi Minh University of Transport</label>
+            <div class="" style="width: 100%">
+              <p>Information Technology, <span style="display: inline-block;">2007 - 2011</span></p>
+              <p>Graduate with Distinction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-card about-contact">
+      <h4 class="app-card-header">Contact</h4>
+      <div class="app-card-content">
+        <div class="app-field-group clearfix">
+          <label class="app-field-label">Skype</label>
+          <div class="app-field-value">
+            <a href="callto:ng-vu-cuong">ng-vu-cuong</a>
+          </div>
+        </div>
+
+        <div class="app-field-group clearfix">
+          <label class="app-field-label">Yahoo</label>
+          <div class="app-field-value">
+            <a href="mailto:nvcuong.infotech@yahoo.com">nvcuong.infotech@yahoo.com</a>
           </div>
         </div>
       </div>
