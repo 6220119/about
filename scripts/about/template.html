@@ -1,0 +1,15 @@
+<div class="app-content-wrapper shadow-z1" ng-controller="AboutCtrl as ctrl">
+  <div class="">
+    <section class="app-card about-basic">
+      <h4 class="app-card-header" ng-bind="ctrl.basicInfo.header"></h4>
+      <div class="app-card-content">
+        <div class="app-field-group clearfix" ng-repeat="field in ctrl.basicInfo.fields">
+          <label class="app-field-label" ng-bind="field.label"></label>
+          <div class="app-field-value">
+            <p ng-bind="field.value"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
