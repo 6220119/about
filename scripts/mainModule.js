@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var app = angular.module('MyProfileApp', []);
+  var app = angular.module('MyProfileApp', ['ngAnimate']);
 
   function getCopyrightInfo(name) {
     var thisYear = new Date().getFullYear();
