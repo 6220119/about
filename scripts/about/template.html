@@ -1,7 +1,7 @@
 <div class="app-content-wrapper clearfix" ng-controller="AboutCtrl as ctrl">
   <div class="app-col-6">
     <section class="app-card about-basic">
-      <h4 class="app-card-header" ng-bind="ctrl.basicInfo.header"></h4>
+      <h4 class="app-card-header border-bt-red" ng-bind="ctrl.basicInfo.header"></h4>
       <div class="app-card-content">
         <div class="app-field-group clearfix" ng-repeat="field in ctrl.basicInfo.fields">
           <label class="app-field-label" ng-bind="field.label"></label>
@@ -13,7 +13,7 @@
     </section>
 
     <section class="app-card about-lang">
-      <h4 class="app-card-header" ng-bind="ctrl.langInfo.header"></h4>
+      <h4 class="app-card-header border-bt-purple" ng-bind="ctrl.langInfo.header"></h4>
       <div class="app-card-content">
         <div class="app-field-group clearfix" ng-repeat="field in ctrl.langInfo.fields">
           <label class="app-field-label" ng-bind="field.label"></label>
@@ -27,7 +27,7 @@
 
   <div class="app-col-6">
     <section class="app-card about-edu">
-      <h4 class="app-card-header">Education</h4>
+      <h4 class="app-card-header border-bt-indigo">Education</h4>
       <div class="app-card-content">
         <div class="college-wrapper clearfix">
           <img class="college-logo" width="48px" style="float: left;" src="styles/imgs/dh-gtvt.jpg">
@@ -43,7 +43,7 @@
     </section>
 
     <section class="app-card about-contact">
-      <h4 class="app-card-header">Contact</h4>
+      <h4 class="app-card-header border-bt-orange">Contact</h4>
       <div class="app-card-content">
         <div class="app-field-group clearfix">
           <label class="app-field-label">Skype</label>
