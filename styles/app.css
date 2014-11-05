@@ -42,6 +42,35 @@ label {
   margin-bottom: 10px;
 }
 
+.image-wrapper {
+  overflow: hidden;
+}
+
+.app-card .image-wrapper {
+  margin: -8px;
+  position: relative;
+  background: rgb(253, 253, 253);
+}
+
+.project-img {
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.project-desc {
+  padding: 8px;
+  background: #2979FF;
+  width: 100%;
+  color: white;
+  padding: 10px;
+
+}
+
+.project-header {
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
 .site-footer {
   position: absolute;
   bottom: 0;
@@ -89,7 +118,7 @@ label {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   padding: 8px;
   background: white;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .app-card-header {
@@ -116,7 +145,7 @@ label {
 .app-avatar {
   width: 100px;
   height: 100px;
-  background: #2962FF;
+  background: rgba(68, 138, 255, 0.54);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
@@ -281,7 +310,7 @@ label {
   }
 
   .app-card {
-    margin: 8px 4px;
+    margin: 8px 4px 16px;
   }
 
   .app-top-panel {

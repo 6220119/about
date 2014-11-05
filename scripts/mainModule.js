@@ -19,7 +19,7 @@
       { name: 'Skills', tpl: 'scripts/skills/template.html'},
       { name: 'Projects', tpl: 'scripts/projects/template.html'}
     ];
-    ctrl.selectedMenu = ctrl.navMenus[0];
+    ctrl.selectedMenu = ctrl.navMenus[2];
     ctrl.copyrightInfo = getCopyrightInfo(ctrl.myName);
   }
   MainCtrl.$inject = [];
