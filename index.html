@@ -2,11 +2,12 @@
 <html ng-app="MyProfileApp" ng-controller="MainCtrl as ctrl">
 <head>
   <meta charset="utf-8">
+  <meta property="og:image" content="http://6220119.github.io/about/styles/imgs/ogImage.jpg"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>About Me</title>
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <!--<link rel="stylesheet" type="text/css" href="styles/fonts/Noto_Serif/fonts.css">-->
-  <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles/fonts/Noto_Serif/fonts.css">
+  <!--<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>-->
   <link rel="stylesheet" type="text/css" href="styles/app.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
     <h1 class="app-name" ng-bind="ctrl.myName"></h1>
   </div>
 
-  <div class="app-toolbar shadow-z1">
+  <div class="app-toolbar shadow-z1 headroom--fixed" headroom tolerance='0' offset='250+48' classes="{pinned:'headroom--pinned',unpinned:'headroom--unpinned',initial:'headroom'}">
     <nav class="app-nav">
       <div class="app-nav-item"
            ng-repeat="menu in ctrl.navMenus"
@@ -40,8 +41,10 @@
   <p class="copyright" ng-bind="ctrl.copyrightInfo"></p>
 </footer>
 
+<script type="text/javascript" src="bower_components/headroom.js/dist/headroom.min.js"></script>
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="bower_components/headroom.js/dist/angular.headroom.min.js"></script>
 <script type="text/javascript" src="scripts/mainModule.js"></script>
 <script type="text/javascript" src="scripts/about/aboutCtrl.js"></script>
 <script type="text/javascript" src="scripts/skills/skillsCtrl.js"></script>

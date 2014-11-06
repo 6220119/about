@@ -542,6 +542,7 @@ label {
     position: absolute;
     bottom: -75px;
     left: 25px;
+    z-index: 1;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     border-radius: 100%;
@@ -560,13 +561,17 @@ label {
     margin: 10px 0;
   }
 
-  .app-toolbar {
+  .app-toolbar.headroom--fixed.headroom--top {
     margin-left: 100px;
   }
 
   .app-nav {
     max-width: 750px;
     margin-left: 100px;
+  }
+
+  .headroom--not-top.headroom--pinned .app-nav {
+    margin: 0 auto;
   }
 
   .app-content-wrapper {
@@ -633,4 +638,41 @@ label {
 }
 .app-tab-content.ng-leave.ng-leave-active {
   display: none;
+}
+
+/* animated menu */
+.headroom {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.headroom--pinned {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.headroom--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.headroom--fixed.headroom--top {
+  position: static;
+  -webkit-transform: none;
+  -ms-transform: none;
+   transform: none;
 }
