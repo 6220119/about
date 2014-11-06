@@ -1,3 +1,8 @@
+html {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 body, button, select, html, textarea, input {
   font-family: 'Noto Serif', serif;
 }

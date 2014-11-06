@@ -13,8 +13,15 @@
     ];
 
     ctrl.otherSkills = [
-      { name: 'Eclipse RCP', logo: 'styles/imgs/skills/eclipseRcp.png'}
-
+      { name: 'Eclipse RCP', logo: 'styles/imgs/skills/eclipseRcp.png'},
+      { name: 'C', logo: 'styles/imgs/skills/c.png'},
+      { name: 'C++', logo: 'styles/imgs/skills/cpp.png'},
+      { name: 'C#', logo: 'styles/imgs/skills/cs.png'},
+      { name: 'Python', logo: 'styles/imgs/skills/python.png'},
+      { name: 'Android', logo: 'styles/imgs/skills/android.png'},
+      { name: 'Node.JS', logo: 'styles/imgs/skills/node.png'},
+      { name: 'Bootstrap', logo: 'styles/imgs/skills/bootstrap.png'},
+      { name: 'Spring', logo: 'styles/imgs/skills/spring.png'}
     ];
   }
 
