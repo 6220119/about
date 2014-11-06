@@ -120,7 +120,6 @@ label {
   transform: scale(1) rotate(0deg) translateY(10%) translateX(0);
 }
 
-
 .image-modal {
   display: block;
   position: absolute;
@@ -162,12 +161,12 @@ label {
   width: 100%;
   color: white;
   padding: 10px;
-
 }
 
 .project-header {
   text-transform: uppercase;
   margin: 0 0 10px;
+  font-weight: bold;
 }
 
 .site-footer {
@@ -415,6 +414,79 @@ label {
   margin: 0;
 }
 
+.skill-area {
+  background: #ffffff;
+  padding: 8px;
+}
+
+.skill-heading {
+  position: relative;
+  border: none;
+  background: #EEEEEE;
+  margin: -8px -8px 8px;
+  padding: 16px;
+}
+
+.star {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAC7ElEQVRo3u1YSYvUQBSOguAG6iTpVhkZcQVBBj14UA8u/8CDMgjixRUVB3GZ6VoEl6M39SDeRDwMIt68KKIX8eJBRXRQT+4nYUzqVUx8lcm03T1JuqbBatEqKLo7lZd+X957X32vHOd/HC6XW3wqz7ZOdV2t563p3mMEQPpnTCaTZuZA7prmPRaABWABWAAWgAVgAVgAFoAFYAFYABbAPw3AI9HOPwKAyBdGAFRPxHNcJn4UOyc+eAzu4O9LWbQu4LyO35/g9VoRAFzj5k4mGIw0OyDAJ9EebXsi37QC6OHhGmMAPBbtanD+vkfCleq6cgLf9HmXycceE99wLcqi9doncBPtBvp4MtPZn8zwKByfiKTH5HOjZ0MNaXTOcZJpPg9W+AzuluZ/Nl0iPlYoHHR4Mr1CxFpMnfdG06fORhw2Z9EYQKfGdJxvynkq7s3jyfwFtXhJhQfLunJKh2myD9Mknqrz9Wgw+UyB6NYR4zafiJ/lDoovOpFQaWjU+UU8ma1yt/1bhqMI4lP7SMABw6kDg22dx+hUhuIqMsxlncJO2clYAStabAeAigf102ydokZqNpP7JFytVaQUDqcGSJc6aYT7xA1Du3C0e3IhApvKMxbW4j6XwLuW57wypEbhVD6bwLCOveJ9pM+3OXUwZqaAKZAS1jldZtvD4150frSg6KWpCBwp53U4lme3+EzslhU/RuCzEQAVKreXs4m8mmendlwl7kp6hYcmhVxYzCYNshpVZxMBUPmoXbNjJo0I3CqMQF1aw4aMaa75PJk7vn/AUL6diD0erjK3E3OxPk/EYR5/VbpGaf20yfkt2kZRvW7EQu0vkBIj5pUolVdy1CU2MnC74C1HaHNRFWvL9e9VHiw1DqB3MJ6Fefu0Uyk9oZd8Lnc43RqoSr2OQSDv49zrdHuoSIwrTv3GJq0JCpucv2l4RKxTjTvmeFDi/EvVIxiVzp00O8j3W9HRQ+ocCD9PpqcYtWC5Y0fz+AVkbVZDOsrNfwAAAABJRU5ErkJggg==");
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: -9px;
+  left: 3px;
+}
+
+.horizontal-list-item.skill-list-item {
+  display: block;
+  font-size: 16px;
+}
+
+.skill-icon {
+  display: table;
+}
+
+.skill-logo {
+  width: 64px;
+  height: 64px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.skill-name {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 12px;
+}
+
+@media (min-width: 480px) {
+  .skill-icon,
+  .skill-logo,
+  .skill-name {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .horizontal-list-item.skill-list-item {
+    display: inline-block;
+    text-align: center;
+    padding: 23px;
+  }
+
+  .skill-logo {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media (min-width: 640px) {
+  .horizontal-list-item.skill-list-item {
+    padding: 11px;
+  }
+}
+
 @media (min-width: 450px) {
   .college-logo {
     display: inline-block;
@@ -522,37 +594,6 @@ label {
   }
 }
 
-.skill-img {
-  /*width: 150px;*/
-  /*height: 150px;*/
-  max-height: 96px;
-}
-
-.app-skills {
-
-}
-
-.app-skill-set-name {
-  margin: 0;
-  border-bottom: thin solid white;
-  font-weight: bold;
-  color: white;
-}
-
-.medal-exp {
-  background: #0288d1;
-  color: white;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  width: 72px;
-  height: 72px;
-  text-align: center;
-  font-size: 42px;
-  line-height: 72px;
-  margin: 0 auto;
-}
-
 .horizontal-list {
   list-style: none;
   margin: 0;
@@ -560,9 +601,9 @@ label {
 }
 
 .horizontal-list-item {
-  padding: 10px 0;
+  padding: 4px;
+  display: inline-block;
 }
-
 
 /* tab animation */
 .app-tab-content.ng-enter,

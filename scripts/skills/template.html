@@ -1,3 +1,29 @@
-<div class="app-content-wrapper clearfix">
-  Cool!
+<div class="app-content-wrapper clearfix" ng-controller="SkillsCtrl as ctrl">
+  <div class="app-card">
+    <h4 class="app-card-header skill-heading"><span class="star"></span><span style="padding-left: 32px;">Top Skills</span></h4>
+    <ul class="skill-list horizontal-list">
+      <li class="horizontal-list-item skill-list-item" ng-repeat="skill in ctrl.topSkills">
+        <figure class="skill-icon clearfix">
+          <div class="skill-logo">
+            <img class="img-responsive" ng-src="{{ skill.logo }}">
+          </div>
+          <figcaption class="skill-name" ng-bind="skill.name"></figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+
+  <div class="app-card">
+    <h4 class="app-card-header skill-heading">Others</h4>
+    <ul class="skill-list horizontal-list">
+      <li class="horizontal-list-item skill-list-item" ng-repeat="skill in ctrl.otherSkills">
+        <figure class="skill-icon clearfix">
+          <div class="skill-logo">
+            <img class="img-responsive" ng-src="{{ skill.logo }}">
+          </div>
+          <figcaption class="skill-name" ng-bind="skill.name"></figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
 </div>
