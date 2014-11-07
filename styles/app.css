@@ -459,6 +459,11 @@ label {
   margin-left: 10px;
 }
 
+.skill-logo img {
+  width: 64px;
+  height: 64px;
+}
+
 .skill-name {
   display: table-cell;
   vertical-align: middle;
@@ -480,7 +485,7 @@ label {
     padding: 23px;
   }
 
-  .skill-logo {
+  .skill-logo, .skill-logo img {
     width: 96px;
     height: 96px;
   }
