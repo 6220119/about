@@ -479,6 +479,10 @@ label {
     padding: 0;
   }
 
+  .skill-name {
+    padding-top: 12px;
+  }
+
   .horizontal-list-item.skill-list-item {
     display: inline-block;
     text-align: center;
